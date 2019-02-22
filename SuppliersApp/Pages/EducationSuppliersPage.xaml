@@ -1,0 +1,31 @@
+﻿<Page x:Class="SuppliersApp.Pages.EducationSuppliersPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SuppliersApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="EducationSuppliersPage">
+
+    <Grid>
+        <WrapPanel Margin="25 10 0 0">
+            <StackPanel Orientation="Horizontal" Margin="10" Width="200">
+                <Image Height="32" Width="32" Source="../Images/eurasianU.png" x:Name="turanSrc"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink x:Name="turan" Click="turan_Click">
+                        <TextBlock Text="Turan University" x:Name="tbxTuran"></TextBlock>
+                    </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10" Width="200">
+                <Image Height="32" Width="32" Source="../Images/Turan_U.jpg" x:Name="euras"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink x:Name="eurasian" Click="eurasian_Click">
+                        <TextBlock Text="Eurasian Unversity" x:Name="tbxEuras"></TextBlock>
+                    </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+        </WrapPanel>
+    </Grid>
+</Page>

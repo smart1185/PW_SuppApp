@@ -1,0 +1,31 @@
+﻿<Page x:Class="SuppliersApp.Pages.AutoSuppliersPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SuppliersApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="AutoSuppliersPage">
+
+    <Grid>
+        <WrapPanel Margin="25 10 0 0">
+            <StackPanel Orientation="Horizontal" Margin="10" Width="200">
+                <Image Height="32" Width="32" Source="../Images/bipek.jpg" x:Name="bipek"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink x:Name="Bipek" Click="Bipek_Click">
+                        <TextBlock Text="BipekAuto" x:Name="tbxBipek"></TextBlock>
+                    </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10" Width="200">
+                <Image Height="32" Width="32" Source="../Images/astana-motors.jpg" x:Name="am"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink x:Name="astana" Click="astana_Click">
+                        <TextBlock Text="Astana Motors" x:Name="tbxAM"></TextBlock>
+                    </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+        </WrapPanel>
+    </Grid>
+</Page>

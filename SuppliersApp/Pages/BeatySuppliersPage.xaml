@@ -1,0 +1,31 @@
+﻿<Page x:Class="SuppliersApp.Pages.BeatySuppliersPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SuppliersApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="BeatySuppliersPage">
+
+    <Grid>
+        <WrapPanel Margin="25 10 0 0">
+            <StackPanel Orientation="Horizontal" Margin="10" Width="200">
+                <Image Height="32" Width="32" Source="../Images/beaty1.JPEG" x:Name="nail"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink x:Name="beaty1" Click="beaty1_Click">
+                        <TextBlock Text="NailSudio" x:Name="tbxNail"></TextBlock>
+                    </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10" Width="200">
+                <Image Height="32" Width="32" Source="../Images/beaty2.jpg" x:Name="erm"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink x:Name="beaty2" Click="beaty2_Click">
+                         <TextBlock Text="Ermitazh" x:Name="tbxErm"></TextBlock>
+                    </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+        </WrapPanel>
+    </Grid>
+</Page>

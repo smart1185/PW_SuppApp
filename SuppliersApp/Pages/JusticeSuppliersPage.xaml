@@ -1,0 +1,31 @@
+﻿<Page x:Class="SuppliersApp.Pages.JusticeSuppliersPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SuppliersApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="JusticeSuppliersPage">
+
+    <Grid>
+        <WrapPanel Margin="25 10 0 0">
+            <StackPanel Orientation="Horizontal" Margin="10" Width="200">
+                <Image Height="32" Width="32" Source="../Images/tax.jpg" x:Name="taxSrc"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink x:Name="tax" Click="tax_Click">
+                        <TextBlock Text="Налоговая служба" x:Name="tbxTax"></TextBlock>
+                    </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10" Width="200">
+                <Image Height="32" Width="32" Source="../Images/auto.jpg" x:Name="autoSrc"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink x:Name="auto" Click="auto_Click">
+                       <TextBlock Text="ГосАвтоИнспекция" x:Name="tbxAuto"></TextBlock> 
+                    </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+        </WrapPanel>
+    </Grid>
+</Page>
